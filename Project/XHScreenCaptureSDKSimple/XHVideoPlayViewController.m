@@ -24,6 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.title = @"Video play";
     _videoPlayView = [[XHVideoPlayView alloc] initWithFrame:self.view.bounds];
     [_videoPlayView.player setSmoothLoopItemByStringPath:self.videoPath smoothLoopCount:1];
     [self.view addSubview:self.videoPlayView];

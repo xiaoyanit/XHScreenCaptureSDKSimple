@@ -1,78 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="bAu-1l-bdS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jtN-Iy-YEI">
     <dependencies>
         <deployment defaultVersion="1280" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--View Controller - 画画-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--View Controller - Drawing-->
+        <scene sceneID="J7S-I6-fB9">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                <viewController id="Xvm-La-gkG" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nhg-FW-4kL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ooy-MH-K55">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="elv-nD-CHv">
                                 <rect key="frame" x="0.0" y="378" width="320" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="开始录制">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startRecordingClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Ub-rh-S4w"/>
+                                    <action selector="startRecordingClicked:" destination="Xvm-La-gkG" eventType="touchUpInside" id="dDt-xw-ERS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Pvr-1S-5hc" customClass="XHDrawView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uYm-Zh-nGC" customClass="XHDrawView">
                                 <rect key="frame" x="0.0" y="1" width="320" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" id="qLQ-mp-zjH">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" id="fku-ku-8mD">
                                 <rect key="frame" x="0.0" y="368" width="292" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Elapsed: 0 Sec " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jqN-n2-qsm">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Elapsed: 0 Sec " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r8O-sP-sqd">
                                 <rect key="frame" x="144" y="324" width="176" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="BBR-iE-uuv">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="8yy-d8-nyN">
                                 <rect key="frame" x="300" y="359" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="画画" id="WI2-IP-AS1"/>
+                    <navigationItem key="navigationItem" title="Drawing" id="4LO-vK-K5F"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="BBR-iE-uuv" id="u1X-50-CCz"/>
-                        <outlet property="drawView" destination="Pvr-1S-5hc" id="JM1-pb-6OX"/>
-                        <outlet property="labelTimeElapsed" destination="jqN-n2-qsm" id="WB8-gv-eNR"/>
-                        <outlet property="progressView" destination="qLQ-mp-zjH" id="04M-Z3-kKM"/>
+                        <outlet property="activityIndicator" destination="8yy-d8-nyN" id="68b-1Q-RtJ"/>
+                        <outlet property="drawView" destination="uYm-Zh-nGC" id="yjq-L5-ulj"/>
+                        <outlet property="labelTimeElapsed" destination="r8O-sP-sqd" id="ThM-ep-na2"/>
+                        <outlet property="progressView" destination="fku-ku-8mD" id="tNL-D3-uvU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keL-Xp-Qkw" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647" y="72"/>
+            <point key="canvasLocation" x="783" y="-184"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="fjj-qV-K49">
+        <scene sceneID="FTi-Ki-S4Q">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bAu-1l-bdS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jtN-Iy-YEI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Myl-1q-NFI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fnL-Rp-P8m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="xsV-Il-9eU"/>
+                        <segue destination="Xvm-La-gkG" kind="relationship" relationship="rootViewController" id="0XR-QY-i9H"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a4M-Pz-78B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qba-OY-drs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="102" y="64"/>
         </scene>
@@ -80,6 +81,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
