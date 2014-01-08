@@ -25,6 +25,8 @@
 		ABC816D0187E135700385653 /* XHScreenCaptureSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC816CF187E135700385653 /* XHScreenCaptureSDK.framework */; };
 		ABC816D2187E13E000385653 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC816D1187E13DF00385653 /* AssetsLibrary.framework */; };
 		ABC816D4187E140200385653 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC816D3187E140200385653 /* AVFoundation.framework */; };
+		ABC816E2187E14EA00385653 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC816DE187E14EA00385653 /* Main_iPad.storyboard */; };
+		ABC816E3187E14EA00385653 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC816E0187E14EA00385653 /* Main_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		ABC816D1187E13DF00385653 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		ABC816D3187E140200385653 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ABC816D5187E141400385653 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ABC816DF187E14EA00385653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		ABC816E1187E14EA00385653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 				ABC816C7187E132200385653 /* ViewController.m */,
 				ABC816C8187E132200385653 /* XHVideoPlayViewController.h */,
 				ABC816C9187E132200385653 /* XHVideoPlayViewController.m */,
+				ABC816DE187E14EA00385653 /* Main_iPad.storyboard */,
+				ABC816E0187E14EA00385653 /* Main_iPhone.storyboard */,
 				ABC816A5187E116300385653 /* Images.xcassets */,
 				ABC81691187E116300385653 /* Supporting Files */,
 			);
@@ -249,6 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC816E3187E14EA00385653 /* Main_iPhone.storyboard in Resources */,
+				ABC816E2187E14EA00385653 /* Main_iPad.storyboard in Resources */,
 				ABC816A6187E116300385653 /* Images.xcassets in Resources */,
 				ABC81695187E116300385653 /* InfoPlist.strings in Resources */,
 			);
@@ -310,6 +318,22 @@
 				ABC816B6187E116300385653 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABC816DE187E14EA00385653 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC816DF187E14EA00385653 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		ABC816E0187E14EA00385653 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABC816E1187E14EA00385653 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
