@@ -24,6 +24,48 @@ XHScreenCaptureSDKSimple 是一款全屏录制组件。
 
 ![image](https://github.com/JackTeam/XHScreenCaptureSDKSimple/raw/master/Screenshots/XHScreenCaptureSDKSimple.gif)
 
+## Ease to use
+``` objective-c   
+screenCapture = [[XHScreenCapture alloc] init];
+```
+1、Manual call setup screen recording, manual calls to stop the screen recording, very reasonable use     
+``` objective-c   
+[screenCapture startVideoCapture];   
+[screenCapture stopVideoCaptureWithProgress:^(CGFloat progress) {
+    } CompletionHandler:^(NSDictionary *info, NSError *error) {
+}]; 
+```    
+
+2、 call this method was auto stop recoder.     need to set stop Duration 10s.
+``` objective-c    
+[screenCapture startVideoCaptureOfDuration:10 WithProgress:^(CGFloat progress) {
+
+    } completionBlock:^(NSDictionary *info, NSError *error) {
+
+}]; 
+```
+
+
+## 使用简单方便
+1、手动调用启动屏幕录制，手动调用停止屏幕录制，很合理的使用
+``` objective-c    
+[screenCapture startVideoCapture];       
+```
+``` objective-c
+[screenCapture stopVideoCaptureWithProgress:^(CGFloat progress) {
+    } CompletionHandler:^(NSDictionary *info, NSError *error) {
+}];
+```
+
+2、调用这个方法会自动停止屏幕录制，可以设置停止时间.10s
+``` objective-c
+[screenCapture startVideoCaptureOfDuration:10 WithProgress:^(CGFloat progress) {
+
+    } completionBlock:^(NSDictionary *info, NSError *error) {
+
+}];       
+```     
+
 ## open source model
 1, here is the SDK mode    
 2, as long as pay attention to the component of a total of more than 500 users, will with all open source code model.   
