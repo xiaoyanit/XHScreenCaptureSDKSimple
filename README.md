@@ -2,7 +2,7 @@ XHScreenCaptureSDKSimple
 ========================
 
 ## English：    
-XHScreenCaptureSDKSimple is a full screen to record component.
+XHScreenCaptureSDKSimple is a full screen recording generated video components    
 Has the following features:
 1, to record the voices around equipment
 2, support block, easy to destroy
@@ -12,7 +12,7 @@ Has the following features:
 6, support CocoaPods installation
 
 ## 中文：   
-XHScreenCaptureSDKSimple 是一款全屏录制组件。     
+XHScreenCaptureSDKSimple 是一款全屏录制生成视频的组件。     
 有以下功能：     
 1、可录制设备周围的声音     
 2、支持block简便毁掉      
